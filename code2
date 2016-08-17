@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EmployeeClass
+{
+   
+    /// The class that holds the strings for the employees
+    class Employee
+    {
+        public string _name, _position, _department;
+        public int _idNumber;
+        
+        // Holds the employee's name.
+        public string employeeName
+        {
+            get
+            {
+                return _name;
+            }
+        }
+        // Holds the ID number.
+        public int idNumber
+        {
+            get
+            {
+                return _idNumber;
+            }
+        }
+        // Holds the Department the employee is in.
+        public string Department
+        {
+            get
+            {
+                return  _department;
+            }
+        }
+        // Holds the position that the employee has.
+        public string Position
+        {
+            get
+            {
+                return _position;
+            }
+
+        }
+
+        // First Constructor
+        public Employee(string name, int idNumber, string department, string position)
+        {
+            _name = name;
+            _idNumber = idNumber;
+            _department = department;
+            _position = position;
+        }
+
+        // Second Constructor
+        public Employee()
+        {
+            _name = "";
+            _department = "";
+            _position = "";
+            _idNumber = 0;
+        }
+
+
+        // Third Constructor
+        public Employee(int idNumber, string name)
+        {
+            idNumber = _idNumber;
+            _name = employeeName;
+            _department = "";
+            _position = "";
+
+        }
+}
+        
+
+
+
+
+}
