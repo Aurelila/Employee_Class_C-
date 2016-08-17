@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace EmployeeClass
+{
+
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+      
+  
+        private void employeeButton_Click(object sender, EventArgs e)
+        {
+            // Holds the employees 
+            Employee employee1 = new Employee();
+            Employee employee2 = new Employee();
+            Employee employee3 = new Employee();
+
+           
+            employee1._name = "Susan Meyers";
+            employee1._idNumber = 47899;
+            employee1._department = "Accounting";
+            employee1._position = "Vice President";
+
+            MessageBox.Show(employee1._name  + employee1._idNumber  + employee1._department + employee1._position);
+
+            employee2._name = "Mark Jones";
+            employee2._idNumber = 39119;
+            employee2._department = "IT";
+            employee2._position = "Programmer";
+
+            MessageBox.Show(employee2._name + employee2._idNumber + employee2._department + employee2._position);
+           
+            employee3._name = "Joy Rogers";
+            employee3._idNumber = 81774;
+            employee3._department = "Manufacturing";
+            employee3._position = "Engineer";
+
+            MessageBox.Show(employee3._name + employee3._idNumber + employee3._department + employee3._position);
+        }
+
+
+
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // Close the form
+            this.Close();
+        }
+
+    }
+
+
+
+
+
+
+
+
+    }
